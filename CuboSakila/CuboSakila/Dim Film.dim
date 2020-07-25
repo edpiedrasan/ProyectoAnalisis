@@ -1,0 +1,261 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a1491d94-1a34-4fa4-9731-fd521305625f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Film</ID>
+  <Name>Dim Film</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3366" scrolltop="-4180" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10213" y="12779" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimFilm" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3440" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000700d000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimFilm" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3366</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4180</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="eac42f0c-8e7a-4d41-ac31-7ae574bca6f2">
+    <DataSourceViewID>Dw Sakila</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="f40629f9-202c-4e02-9818-5079facf8515">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="2a7fe383-72ec-4ae7-9ae7-6dc6f4b348f0">
+      <ID>Film Id</ID>
+      <Name>Film Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="55c53927-960a-4152-9fc2-87049579d031">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b68ff65-1176-48dd-a916-a1d24c9eb3d4">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>film_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f3e47c73-8f95-4477-8569-c7267d60857d">
+          <AttributeID>Title</AttributeID>
+          <Name>Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8a427f70-5c40-48d6-8b8a-37fd9db32e8a">
+          <AttributeID>Rental Duration</AttributeID>
+          <Name>Rental Duration</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0125b274-5781-4f00-acaa-dd9abb9b3393">
+          <AttributeID>Rental Rate</AttributeID>
+          <Name>Rental Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="349c53e9-4e0e-471d-b58a-bb4ef2a6e5d3">
+          <AttributeID>Length</AttributeID>
+          <Name>Length</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ae9f71b9-5540-4822-84c1-ef4506aa7fb2">
+          <AttributeID>Replacement Cost</AttributeID>
+          <Name>Replacement Cost</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2e8f8efd-607d-4562-abf9-38e2f4a9b7b9">
+          <AttributeID>Rating</AttributeID>
+          <Name>Rating</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0638f46d-d0bd-44ec-b87f-ed662d717e24">
+          <AttributeID>Special Features</AttributeID>
+          <Name>Special Features</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6d4ca8bb-1560-40fb-8f33-fdc96d1517e6">
+      <ID>Title</ID>
+      <Name>Title</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb95f25d-a720-465e-9478-53810ad3786d">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="696b21e6-4def-4343-896e-bac7d0ed1b09">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="22c80980-0813-42a6-9e86-021cfe83e960">
+      <ID>Rental Duration</ID>
+      <Name>Rental Duration</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="36a8a413-512e-4715-9400-e29cc2c4e6c0">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d08e4a40-4e3b-43df-a51f-4836b791a304">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>rental_duration</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b68d368c-840d-46ed-8659-a52b137d9f87">
+      <ID>Rental Rate</ID>
+      <Name>Rental Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="79d557f4-d6ed-46ca-acce-ebb268f51efa">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ef722c6-60c0-4376-af83-674a9859a541">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>rental_rate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3181c444-11dc-42e2-806e-451204d0c593">
+      <ID>Length</ID>
+      <Name>Length</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="572a98a7-4015-48ad-8df6-9574b8c2f0c2">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d081507-c683-456c-a7ec-4d991bf0227d">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>length</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5d0f9087-8a73-4a77-96f5-d5bcfc6e88b9">
+      <ID>Replacement Cost</ID>
+      <Name>Replacement Cost</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="824710a7-8665-4c05-9858-b85f7f47eedf">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8a51d36-6fd5-4e69-b069-a2e7e9befd9b">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>replacement_cost</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2191ec0f-25cf-4ef7-bd54-4d2fed98b100">
+      <ID>Rating</ID>
+      <Name>Rating</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="11345c4d-b1f7-4e60-8f0e-e8eac70c23db">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1b943d9-f4b5-47bc-a716-93b76df6cb89">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>rating</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7d5cc5a0-9d8f-4520-be00-daf0f1175fdf">
+      <ID>Special Features</ID>
+      <Name>Special Features</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="99d9323a-9ca5-449c-8a30-cc47c5f76158">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d59b71a-a518-4aac-b71f-1893540788a2">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>special_features</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="f5cf06e2-c05f-4da0-ae09-93ccf0cca98b">
+      <ID>Hierarchy</ID>
+      <Name>Rating - legth - title</Name>
+      <Levels>
+        <Level dwd:design-time-name="e2e485d9-81dc-4422-a0da-9a87e42bc8e5">
+          <ID>Rating</ID>
+          <Name>Rating</Name>
+          <SourceAttributeID>Rating</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="55276f73-39f5-421d-90a4-a54d9d9ee119">
+          <ID>Length</ID>
+          <Name>Length</Name>
+          <SourceAttributeID>Length</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="00bc13b4-0327-4442-8f21-430fc0d3aab3">
+          <ID>Title</ID>
+          <Name>Title</Name>
+          <SourceAttributeID>Title</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

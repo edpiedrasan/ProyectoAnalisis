@@ -6,10 +6,71 @@
     <Name>CuboSakila.database</Name>
     <FullPath>CuboSakila.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Dw Sakila.cube</Name>
+      <FullPath>Dw Sakila.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dw Sakila.partitions</Name>
+          <FullPath>Dw Sakila.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Customer.dim</Name>
+      <FullPath>Dim Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Staff.dim</Name>
+      <FullPath>Dim Staff.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Inventory.dim</Name>
+      <FullPath>Fact Inventory.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Film.dim</Name>
+      <FullPath>Dim Film.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Store.dim</Name>
+      <FullPath>Dim Store.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Dw Sakila.ds</Name>
+      <FullPath>Dw Sakila.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Dw Sakila.dsv</Name>
+      <FullPath>Dw Sakila.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Dw Sakila</Id>
+            <Name>Dw Sakila</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=(local);User ID=;Initial Catalog=dw_sakila</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Dw Sakila</Id>
+            <Name>Dw Sakila</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
